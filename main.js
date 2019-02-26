@@ -146,7 +146,7 @@ $(document).ready(function() {
 	urlParams = getUrlVars();
 	if ("comments" in urlParams) {
 		//console.log("This is a comments page.");
-		var url = "http://www.reddit.com" + urlParams.comments + ".json?jsonp=init";
+		var url = "https://www.reddit.com" + urlParams.comments + ".json?jsonp=init";
 		//console.log(url);
 		$.getScript(url, function(){
 		    //console.log("Loading comments page: " + urlParams.comments);
@@ -155,7 +155,7 @@ $(document).ready(function() {
 
 
 	} else {
-		$.getScript("http://www.reddit.com/.json?jsonp=init", function(){
+		$.getScript("https://www.reddit.com/.json?jsonp=init", function(){
 		    //console.log("Loading reddit homepage.");
 		});
 	
